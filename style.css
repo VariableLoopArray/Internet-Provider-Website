@@ -1,0 +1,824 @@
+
+/*Toutes les pages*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header ul{
+    margin: 0px;
+    list-style: none;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    padding: 7px;
+}
+header ul li a{
+    background: black;
+    color: white;
+    padding-right: 10px;
+
+}
+#langue{
+    padding-left: 10px ;
+    border-left: 2px solid white;
+}
+nav ul{
+    display: flex;
+    
+}
+#search{
+    width: 50%;
+    display: flex;
+    margin-left: 3em;
+    justify-content: start;
+}
+nav ul a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    width: 10vw;
+    justify-content: center;
+    font-weight: bolder;
+}
+nav ul a img{
+    height: 75px;
+}
+#logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2em;
+    margin-left: 2em;
+}
+
+nav ul #search li:hover{
+    background-color:#eeeeee;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+#search ul li{
+    list-style: none;
+    display: flex;
+}
+
+#search_bar{
+    position: absolute;
+    right: 5vw;
+    align-self: center;
+    list-style: none;
+}
+#search_bar input[type=search]{
+    padding: 10px;
+    border-radius: 0;
+}
+#search_bar button{
+    padding: 10px;
+    border-radius: 0;
+}
+#search_bar button:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+
+}
+footer div{
+    display: flex;
+    background-color:white;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+footer div ul{
+    list-style: none;
+}
+footer div ul li{
+    margin: 10px 0 10px 0;
+}
+footer div ul li:first-of-type{
+    margin-bottom: 1em;
+}
+#vrai-footer{
+    display: flex;
+    padding: 0;
+    
+}
+#row-links ul{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+}
+#vers-haut{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*acceuil*/
+
+#annonce{
+    background-color:lightgreen;
+    padding: 0.5em;
+    text-align: center;
+    font-size:large;
+    display: flex;
+    justify-content: center;
+}
+#annonce p{
+    width: 75%;
+}
+#offre{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(34, 34, 66);
+    padding: 5em;
+    width: 100vw;
+
+}
+#text-offre{
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    padding-left: 25em;
+}
+#text-offre p {
+    padding-bottom: 1em;
+}
+#title-offre{
+    width: 25vw;
+    font-size: x-large;
+    padding: 0 0 1em 0;
+}
+#button-offre{
+    width: 15em;
+    padding: 5px;
+    border-radius:5px ;
+    background-color:white ;
+}
+#image-offre{
+    width: 25%;
+    height:200px;
+}
+#image-offre img{
+    height:200px;
+}
+#list-produit{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 5em;
+
+}
+#list-produit li{
+
+    width: 30vw;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+}
+#list-produit a{
+    padding: 3em 0;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+ 
+}
+#list-produit a b{
+    position: relative;
+    opacity: 0;
+
+}
+.image-service{
+    height: 75px;
+    width: 75px;
+}
+#list-produit a:hover{
+    background-color:rgb(34, 34, 66) ;
+    transition-duration: 0.5s;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+#list-produit li:hover b{
+    transition-duration: 0.5s;
+    opacity: 1;
+    color: white;
+}
+#list-produit li:hover img{
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+#title-h2{
+    text-align: center;
+    margin: 2em;
+}
+#offre-box{
+    display: flex;
+    justify-content: center;
+
+}
+.boxes{
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 2em;
+    width: 30vw;
+    border-radius: 10%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.boxes img{
+    width: 100%;
+}
+#offre-box .boxes div{
+    padding: 2em;
+
+}
+#offre-box .boxes div h4{
+    padding: 1em 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#offre-box .boxes .link {
+    text-align: center;
+}
+.link a{
+    color:black ;
+}
+/*Service*/
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(34, 34, 66);
+}
+.section-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+.h2-service{
+    margin: 3.5em;
+    position: absolute;
+    left: 5em;
+    color: white;
+}
+.presentation{
+    width: 79%;
+    margin: 10em 0 5em 0;
+    font-size: large;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#forfaits-mobiles{
+    width: 80%;
+    display: flex; 
+    justify-content:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.boxe-individuel{
+    border-radius: 50px;
+    display: flex;
+    border: 1px black solid;
+    flex-direction: column;
+    margin: 1em;
+    overflow: hidden;
+    background-color: #eeeeee;
+    width: 300px;
+}
+.color-grey{
+    background-color:#eeeeee;
+    padding: 3em;
+}
+.boxe-individuel h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+.boxe-individuel p{
+    margin: 10px;
+}
+.boxe-individuel ul{
+    padding: 0em 3em;
+}
+.boxe-individuel hr{
+    margin: 1em;
+}
+.boxe-individuel h6{
+    padding-top:3em;
+    font-size: large;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.boxe-individuel div{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.boxe-individuel div button{
+    padding: 1em;
+    background-color: black;
+    color: azure;
+    border-radius: 50px;
+}
+#telephone-offre{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.telephone{
+    padding: 2em;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 2em;
+    display: flex;
+    background-color: #eeeeee;
+}
+.telephone img{
+    height: 200px;
+}
+.telephone h4{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.telephone p{
+    padding: 1em 0em;
+}
+.precision{
+    font-size:10px;
+}
+.telephone:hover{
+    transition-duration: 1s;
+    box-shadow: 10px 10px 100px rgb(255, 255, 255);
+
+}
+#tele-offre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tele-individuel{
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: #eeeeee;
+
+}
+.decimaux{
+    font-size: x-small; 
+}
+.tele-individuel div{
+
+    margin: 2em;
+}
+.tele-individuel div p{
+    padding: 5px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column button{
+    margin: 1em 0;
+    padding: 1em;
+}
+.tele-individuel div a{
+    color:black
+}
+
+#wifi{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    align-items: center;
+}
+#offre-wifi{
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 20px;
+
+}
+#offre-wifi div{
+    display: flex;
+    padding: 2em;
+}
+#offre-wifi h2,#offre-wifi p{
+    margin: 30px 0 0 0;
+}
+#vitesse30,#vitesse60,#vitesse100{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#prix{
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;  
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-top: 2em;
+    padding: 1em;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+#prix button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+}
+#prix p{
+    padding-right: 20px;
+    font-size: xx-large;
+}
+#prix p span{
+    font-size: smaller;
+}
+#contact-titre{
+    color: white;
+    text-align: center;
+}
+#contact-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@supports (display: grid) {
+    #contact {  
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 7em 1fr;
+        grid-gap: 1em; 
+        gap: 1em;
+        font-family: Arial, sans-serif;
+        min-width: 20em; 
+        width: 40%; 
+        background-color: #eeeeee;
+        padding: 2em;
+        margin: 1em 0 5em 0;
+    }
+    input[type="submit"] { 
+        grid-column: 2 / 3;
+        width: 10em; margin-left: 0;
+    } 
+  }
+/*Carriere*/
+#image-carriere{
+    height: 40em;
+    background-image: url(images/carriere.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@supports (display: grid) {
+    #application {  
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5em 6em 1fr;
+        grid-template-columns: 7em 1fr;
+        grid-gap: 1em; 
+        gap: 1em;
+        font-family: Arial, sans-serif;
+        min-width: 20em; 
+        width: 30%; 
+        background-color: #eeeeee;
+        border-radius: 40px;
+        padding: 2em;
+        margin: 1em;
+    }
+    input[type="submit"] { 
+        grid-column: 2 / 3;
+        width: 10em; margin-left: 0;
+    } 
+  }
+input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+label{
+    align-self: center;
+}
+#radio-choix{
+    align-self: center;
+}
+#radio-choix #radio{
+    margin: 0 5px 0 2em;
+}
+#cv{
+    border: none;
+}
+#formulaire{
+    margin: 0 0 10em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form button{
+    width: 10em;
+    padding: 2px;
+}
+#titre-image{
+    position: relative;
+    top: 200px;
+    left: 200px;
+    color: white;
+    z-index: 2;
+}
+#textsurimage{
+    position: relative;
+    top: 230px;
+    left: 200px;
+    font-size: xx-large;
+    width: 45%;
+    color: white;
+    z-index: 2;
+}
+.title-carriere{
+    text-align: center;
+    margin: 3em 0;
+}
+#expertise{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.personne{
+    width: 30vw;
+    padding: 1em;
+    margin: 1em;
+    text-align: justify;
+}
+#projet-section{
+    margin: 10%;
+}
+.projet{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 5em;
+}
+.image-projet{
+    width: 700px;
+    width:40vw;
+}
+.sous-divison-projet{
+    width: 25%;
+}
+.sous-divison-projet p {
+    margin-top: 1em;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#table{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+tr:nth-child(odd){
+    background-color:#eeeeee;
+}
+table td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+/*design*/
+.design-title{
+    margin: 3em 0 3em 0;
+    text-align: center;
+}
+#design{
+    display: flex;
+    flex-wrap: wrap;
+}
+.design-box{
+    margin: 2em;
+    padding: 2em;
+    text-align: justify;
+}
+.design-box h4{
+    margin-bottom: 1em;
+}
+
+.design-box:hover{
+    transition-duration: 1s;
+    background-color: #000000;
+    color:white;
+    border-radius: 10px; 
+}
+@supports (display: grid) {
+    #design{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/*a_propos*/
+#public{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+#public p{
+    width: 35%;
+    text-align: center;
+}
+#competition{
+    margin: 5em 0 5em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#competition h2{
+    margin-bottom: 3em;
+}
+#competition div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#competition div p{
+    width: 80%;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-site{
+    height: auto;
+    width: 40vw;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+#competition div div{
+    padding: 3em 0 3em 0;
+}
+#competition div div h4{
+    text-align: left;
+}
+#competition div div ul{
+    margin: 1em;
+    list-style: none;
+    text-align: left;
+}
+#competition div div ul{
+    width: 50vw;
+}
+#competition a{
+    font-size: x-large;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 2em;
+}
+#attentes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#attentes p{
+    width: 40%;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media(max-width:1200px){
+    body{
+        display: grid;
+        grid-template:
+        "header header"
+        "nav main"
+        "footer footer"
+        / 150px 1fr
+    }
+    nav{ 
+        grid-area:nav;}
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    nav ul #search_bar{
+        display: none;
+    }
+    nav ul a {
+        width: 100%;
+        height: 3em;
+    }
+    #logo-nav{
+        margin: 0px;
+        padding: 0 0 0 10px;
+        width: 150px;
+    }
+    #logo-nav:hover{
+        background-color: #eeeeee;
+    }
+    nav ul a img{
+        display: none;
+    }
+    #search{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around;
+    }
+    #search a{
+        height: 3em;
+    }
+    #search ul li{
+        width: 100%;
+    }
+    #search ul li:hover{
+        background-color: #eeeeee;
+    }
+    header{ grid-area: header;}
+    main{ grid-area: main;}
+    footer{ grid-area: footer;}
+
+    #vrai-footer{
+        display: none;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 40vw;
+        width: 20vw;
+    }
+
+}
+@media(max-width:800px){
+    body{
+        display: grid;
+        grid-template:
+        "header"
+        "nav"
+        "main"
+        "footer"
+        /1fr
+    }
+    nav{ grid-area:nav;}
+    header{ grid-area: header;}
+    main{ grid-area: main;}
+    footer{ grid-area: footer;}
+    nav ul #search{
+        width: 100%;
+    }
+    #logo-nav{
+        width: 100%;
+
+    }
+    #logo-nav p{
+        width: 100%;
+        text-align: center;
+    }
+    #offre{
+        width: 800px;
+    }
+    #text-offre{
+        padding:0;
+    }
+    #title-offre{
+
+    }
+    #image-offre{
+        display: none;
+    }
+    #offre-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #list-produit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
